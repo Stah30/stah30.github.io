@@ -1,0 +1,30 @@
+ .back {
+    background-color: #808080;
+    padding: 20px;
+    width: fit-content;
+}
+#first { 
+
+    width: 100px;  
+    height: 100px;
+    background-color: #fea500;
+    margin: 10px;
+}
+#second {
+    width: 100px;  
+    height: 100px;
+    background-color: #fea500; 
+    margin: 10px;
+}
+#third {
+    width: 100px;  
+    height: 100px;
+    background-color: #fea500; 
+    margin: 10px;
+}
+#fourth {
+    width: 100px;  
+    height: 100px;
+    background-color: #fea500; 
+    margin: 10px;
+}
