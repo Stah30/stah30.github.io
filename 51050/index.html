@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://formspree.io/f/mgvnjawr" method="POST">
+            <label for="first-name">First name: </label>
+            <input type="text" id="first-name" name="first-name"><br>
+            <label for="last-name">Last name: </label>
+            <input type="text" id="last-name" name="last-name"><br>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="phone">Phone: </label>
+            <input type="tel" id="phone" name="phone"><br><br>
+
+            <label for="city">City:</label>
+            <select name="city" id="city">
+            <option value="Krakow">Krakow</option>
+            <option value="Wroclaw">Wroclaw</option>
+            <option value="Gdansk">Gdansk</option><br><br>
+            </select>
+
+            <p>Gender</p>
+            <input type="radio" name="gender" id="female" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="male" value="Male">
+            <label for="male">Male</label><br><br>
+
+            <label>
+                <input type="checkbox" name="agree" required>
+                I agree
+            </label><br><br>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+            
+            <button type="submit">Send</button>
+    </form>
+    
+</body>
+</html>

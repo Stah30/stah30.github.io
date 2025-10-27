@@ -1,0 +1,35 @@
+.square {
+    position: absolute;
+    width: 195px;
+    height: 195px;
+    border: 1px;
+}
+
+.square1 {top: 50px; left:50px; background-color: red;}
+.square2 {top: 50px; left:250px; background-color: blue;}
+.square3 {top: 50px; left:450px; background-color: green;}
+.square4 {top: 250px; left:50px; background-color: yellow;}
+.square5 {top: 250px; left:250px; background-color: black;}
+.square6 {top: 250px; left:450px; background-color: orange;}
+.square7 {top: 450px; left:50px; background-color: purple;}
+.square8 {top: 450px; left:250px; background-color: gray;}
+.square9 {top: 450px; left:450px; background-color: pink;}
+
+.circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 0;left: 0;bottom: 0;right: 0;
+    margin: auto;
+}
+
+.circle1 {background-color: pink;}
+.circle2 {background-color: gray;}
+.circle3 {background-color: purple;}
+.circle4 {background-color: green;}
+.circle5 {background-color: red;}
+.circle6 {background-color: blue;}
+.circle7 {background-color: orange;}
+.circle8 {background-color: yellow;}
+.circle9 {background-color: black;}
