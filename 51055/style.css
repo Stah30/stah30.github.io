@@ -1,0 +1,17 @@
+.outside {
+    background-color: #a6a9b6;
+    height: 400px;
+    width: 400px;
+    border: 10px solid #666360;
+    position: absolute;
+}
+
+
+.inside1, .inside2 {
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
+
+.inside1 {background-color:#ff912e;top: 200px;}
+.inside2 {background-color:#e4e4e4;bottom: 200px;left: 200px;}
