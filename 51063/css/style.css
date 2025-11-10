@@ -1,0 +1,300 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+hr {
+    width: 70px;
+    border: 1px solid #007bff;
+    border-bottom: 0;
+}
+
+section {
+    padding: 120px 0;
+}
+
+.sec-header {
+    margin-bottom: 75px;
+}
+.sec-header h2 {
+    color: #333;
+    font-size: 1.9em;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn {
+    text-decoration: none;
+    border:1.5px solid #007bff;
+    color: #333;
+    padding: 14px 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: auto;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: #007bff;
+}
+
+/* Header */
+
+.m-header {
+    height: 70vh;
+    background-image: url(imgg/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.m-header .container {
+    text-align: center;
+
+}
+.m-header .container h1 {
+    font-size: 4.2em;
+    color: #007bff;
+    margin: 0;
+}
+
+.m-header .container p {
+    color: #333;
+    font-size: 1.3em;
+    margin: 40 0;
+}
+
+.m-header .container p span {
+    color: #007bff;
+}
+
+/* Nav */
+
+.m-menu {
+    background-color: #007bff; 
+}
+
+.m-menu ul {
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.m-menu ul .item-menu {
+    display: inline-block;
+    margin: 0 10px;
+} 
+
+.m-menu ul .item-menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    display: block;
+    padding: 0 40px;
+    transition: all .3s;
+}
+
+.m-menu ul .item-menu a:hover {
+    color: #8ec4ff;
+}
+
+#drop-nav {
+    display: none;
+}
+
+label[for="drop-nav"] {
+    display: none;
+}
+
+/* About */
+
+.about {
+    text-align: center;
+}
+
+.about img {
+    border-radius: 50%;
+}
+
+.about p {
+    max-width: 700px;
+    margin: 70px auto 70px auto;
+    color: #777;
+    line-height: 1.4;
+}
+
+/* Portfolio */
+
+.portfolio {
+    background-color: #f2f1ed;
+}
+
+.portfolio-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-wrapper .portfolio-item {
+    flex-basis: 25%;
+    height: 200px;
+    position: relative;
+}
+
+.portfolio-wrapper .portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio-wrapper .portfolio-item h3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 200px;
+    margin: 0;
+    color: #fff;
+    background-color: rgba(0, 123, 255, 0.8);
+    font-weight: 300;
+    font-size: 3em;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+
+.portfolio-wrapper .portfolio-item h3:hover {
+    opacity: 1;
+}
+
+/* Kontakt form */
+
+.contact form {
+    max-width: 700px;
+    margin: 40px auto 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact input[type="text"],
+.contact input[type="email"] {
+    flex-basis: 48%;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.contact textarea {
+    flex-basis: 100%;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    height: 100px;
+}
+
+/* Kontakt - Social links */
+
+.social-links {
+    text-align: center;
+    margin-top: 75px;
+}
+
+.social-links .social-link {
+    color: #007bff; 
+    font-size: 2.5em;
+    display: inline-block;
+    transition: all 0.3s;
+    margin: 0 20px;
+}
+
+.social-links .social-link:hover {
+    color: #777;
+}
+
+/* Footer  */
+
+.footer {
+    background-color: #f2f1ed;
+    padding: 30px;
+    text-align: center;
+    color: #777;
+}
+
+/* Adaptive */
+
+@media (max-width: 1120px){
+    .container {
+        max-width: 992px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .portfolio-wrapper .portfolio-item {
+        flex-basis: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 95%;
+    }
+
+    .portfolio-wrapper .portfolio-item {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .m-header .container h1 {
+        font-size: 3em;
+    }
+
+    .portfolio-wrapper .portfolio-item {
+        flex-basis: 100%;
+    }
+
+    .contact input[type="text"],
+    .contact input[type="email"] {
+        flex-basis: 100%;
+    }
+
+
+    label[for="drop-nav"] {
+        display: block;
+        padding: 14px 20px;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .m-menu ul {
+        display: none;
+    }
+
+    #drop-nav:checked + ul {
+        display: block;
+    }
+
+    .m-menu ul .item-menu {
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+}
