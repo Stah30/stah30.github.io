@@ -1,9 +1,0 @@
-p   {
-    color: blueviolet;
-}
-h1,h3 {
-    background-color: aqua;
-}
-h1+h3 {
-    color: red;
-}
